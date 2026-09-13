@@ -4,7 +4,7 @@
   "packageJsonOverride": {
     "author": "Dfilipiak",
     "description": "Description for emails. Hello world!",
-    "private": true,
+    "private": false,
     "scripts": {}
   },
   "version": "v21",
