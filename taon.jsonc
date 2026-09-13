@@ -1,5 +1,6 @@
 {
   "type": "isomorphic-lib",
+  "overrideNpmName": "@taon-dev/emails",
   "packageJsonOverride": {
     "author": "Dfilipiak",
     "description": "Description for emails. Hello world!",
