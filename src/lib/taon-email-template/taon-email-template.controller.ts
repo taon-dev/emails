@@ -20,7 +20,7 @@ import { TaonEmailTemplateRepository } from './taon-email-template.repository';
 export class TaonEmailTemplateController extends TaonBaseCrudController<TaonEmailTemplateEntity> {
   entityClassResolveFn: () => typeof TaonEmailTemplateEntity = () => TaonEmailTemplateEntity;
 
-  taonEmailTemplateRepository = this.injectCustomRepo(TaonEmailTemplateRepository);
+  taonEmailTemplateRepository = this.inject(TaonEmailTemplateRepository);
 
   //#region methods & getters / hello world
   /**

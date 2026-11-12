@@ -9,7 +9,7 @@ import { TaonEmailEventProvider } from './taon-email-event.provider';
 
 @Injectable()
 export class TaonEmailEventConfigService extends TaonBaseAngularService {
-  private taonEmailEventProvider = this.injectProvider(TaonEmailEventProvider);
+  private taonEmailEventProvider = this.inject(TaonEmailEventProvider);
 
   get isEnableOption() {
     return this.taonEmailEventProvider.enabledTaonEmailEventOption;

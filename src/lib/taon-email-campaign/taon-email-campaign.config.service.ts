@@ -9,7 +9,7 @@ import { TaonEmailCampaignProvider } from './taon-email-campaign.provider';
 
 @Injectable()
 export class TaonEmailCampaignConfigService extends TaonBaseAngularService {
-  private taonEmailCampaignProvider = this.injectProvider(TaonEmailCampaignProvider);
+  private taonEmailCampaignProvider = this.inject(TaonEmailCampaignProvider);
 
   get isEnableOption() {
     return this.taonEmailCampaignProvider.enabledTaonEmailCampaignOption;

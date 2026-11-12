@@ -9,7 +9,7 @@ import { TaonEmailListProvider } from './taon-email-list.provider';
   // allowedEvents: ['afterUpdate'],
 })
 export class TaonEmailListSubscriber extends TaonBaseSubscriberForEntity {
-  taonEmailListProvider = this.injectProvider(TaonEmailListProvider);
+  taonEmailListProvider = this.inject(TaonEmailListProvider);
   listenTo(): typeof TaonEmailListEntity {
     return TaonEmailListEntity;
   }

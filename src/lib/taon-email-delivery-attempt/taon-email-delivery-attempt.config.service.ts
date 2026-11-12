@@ -9,7 +9,7 @@ import { TaonEmailDeliveryAttemptProvider } from './taon-email-delivery-attempt.
 
 @Injectable()
 export class TaonEmailDeliveryAttemptConfigService extends TaonBaseAngularService {
-  private taonEmailDeliveryAttemptProvider = this.injectProvider(TaonEmailDeliveryAttemptProvider);
+  private taonEmailDeliveryAttemptProvider = this.inject(TaonEmailDeliveryAttemptProvider);
 
   get isEnableOption() {
     return this.taonEmailDeliveryAttemptProvider.enabledTaonEmailDeliveryAttemptOption;

@@ -9,7 +9,7 @@ import { TaonEmailCampaignProvider } from './taon-email-campaign.provider';
   // allowedEvents: ['afterUpdate'],
 })
 export class TaonEmailCampaignSubscriber extends TaonBaseSubscriberForEntity {
-  taonEmailCampaignProvider = this.injectProvider(TaonEmailCampaignProvider);
+  taonEmailCampaignProvider = this.inject(TaonEmailCampaignProvider);
   listenTo(): typeof TaonEmailCampaignEntity {
     return TaonEmailCampaignEntity;
   }

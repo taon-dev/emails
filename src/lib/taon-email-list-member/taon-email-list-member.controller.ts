@@ -20,7 +20,7 @@ import { TaonEmailListMemberRepository } from './taon-email-list-member.reposito
 export class TaonEmailListMemberController extends TaonBaseCrudController<TaonEmailListMemberEntity> {
   entityClassResolveFn: () => typeof TaonEmailListMemberEntity = () => TaonEmailListMemberEntity;
 
-  taonEmailListMemberRepository = this.injectCustomRepo(TaonEmailListMemberRepository);
+  taonEmailListMemberRepository = this.inject(TaonEmailListMemberRepository);
 
   //#region methods & getters / hello world
   /**

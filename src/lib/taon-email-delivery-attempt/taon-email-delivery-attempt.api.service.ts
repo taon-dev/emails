@@ -10,7 +10,7 @@ import { TaonEmailDeliveryAttemptController } from './taon-email-delivery-attemp
 
 @Injectable()
 export class TaonEmailDeliveryAttemptApiService extends TaonBaseAngularService {
-  private taonEmailDeliveryAttemptController = this.injectController(TaonEmailDeliveryAttemptController);
+  private taonEmailDeliveryAttemptController = this.inject(TaonEmailDeliveryAttemptController);
 
   public get allMyEntities$(): Observable<TaonEmailDeliveryAttemptEntity[]> {
     return this.taonEmailDeliveryAttemptController.getAll().request!().observable.pipe(

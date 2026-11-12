@@ -21,7 +21,7 @@ export class TaonEmailEventController extends TaonBaseCrudController<TaonEmailEv
   entityClassResolveFn: () => typeof TaonEmailEventEntity = () =>
     TaonEmailEventEntity;
 
-  taonEmailEventRepository = this.injectCustomRepo(TaonEmailEventRepository);
+  taonEmailEventRepository = this.inject(TaonEmailEventRepository);
 
   //#region methods & getters / hello world
   /**

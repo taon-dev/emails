@@ -9,7 +9,7 @@ import { TaonEmailListMemberProvider } from './taon-email-list-member.provider';
 
 @Injectable()
 export class TaonEmailListMemberConfigService extends TaonBaseAngularService {
-  private taonEmailListMemberProvider = this.injectProvider(TaonEmailListMemberProvider);
+  private taonEmailListMemberProvider = this.inject(TaonEmailListMemberProvider);
 
   get isEnableOption() {
     return this.taonEmailListMemberProvider.enabledTaonEmailListMemberOption;

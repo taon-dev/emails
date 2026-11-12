@@ -9,7 +9,7 @@ import { TaonEmailMessageProvider } from './taon-email-message.provider';
 
 @Injectable()
 export class TaonEmailMessageConfigService extends TaonBaseAngularService {
-  private taonEmailMessageProvider = this.injectProvider(TaonEmailMessageProvider);
+  private taonEmailMessageProvider = this.inject(TaonEmailMessageProvider);
 
   get isEnableOption() {
     return this.taonEmailMessageProvider.enabledTaonEmailMessageOption;

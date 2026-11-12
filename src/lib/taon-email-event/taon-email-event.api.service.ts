@@ -10,7 +10,7 @@ import { TaonEmailEventController } from './taon-email-event.controller';
 
 @Injectable()
 export class TaonEmailEventApiService extends TaonBaseAngularService {
-  private taonEmailEventController = this.injectController(TaonEmailEventController);
+  private taonEmailEventController = this.inject(TaonEmailEventController);
 
   public get allMyEntities$(): Observable<TaonEmailEventEntity[]> {
     return this.taonEmailEventController.getAll().request!().observable.pipe(

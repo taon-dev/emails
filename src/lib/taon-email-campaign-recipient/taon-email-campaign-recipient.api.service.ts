@@ -10,7 +10,7 @@ import { TaonEmailCampaignRecipientController } from './taon-email-campaign-reci
 
 @Injectable()
 export class TaonEmailCampaignRecipientApiService extends TaonBaseAngularService {
-  private taonEmailCampaignRecipientController = this.injectController(TaonEmailCampaignRecipientController);
+  private taonEmailCampaignRecipientController = this.inject(TaonEmailCampaignRecipientController);
 
   public get allMyEntities$(): Observable<TaonEmailCampaignRecipientEntity[]> {
     return this.taonEmailCampaignRecipientController.getAll().request!().observable.pipe(

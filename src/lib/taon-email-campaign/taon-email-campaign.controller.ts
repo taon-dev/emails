@@ -21,7 +21,7 @@ export class TaonEmailCampaignController extends TaonBaseCrudController<TaonEmai
   entityClassResolveFn: () => typeof TaonEmailCampaignEntity = () =>
     TaonEmailCampaignEntity;
 
-  taonEmailCampaignRepository = this.injectCustomRepo(
+  taonEmailCampaignRepository = this.inject(
     TaonEmailCampaignRepository,
   );
 

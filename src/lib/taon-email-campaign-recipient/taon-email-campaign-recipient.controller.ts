@@ -20,7 +20,7 @@ import { TaonEmailCampaignRecipientRepository } from './taon-email-campaign-reci
 export class TaonEmailCampaignRecipientController extends TaonBaseCrudController<TaonEmailCampaignRecipientEntity> {
   entityClassResolveFn: () => typeof TaonEmailCampaignRecipientEntity = () => TaonEmailCampaignRecipientEntity;
 
-  taonEmailCampaignRecipientRepository = this.injectCustomRepo(TaonEmailCampaignRecipientRepository);
+  taonEmailCampaignRecipientRepository = this.inject(TaonEmailCampaignRecipientRepository);
 
   //#region methods & getters / hello world
   /**

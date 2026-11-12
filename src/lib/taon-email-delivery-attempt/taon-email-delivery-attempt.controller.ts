@@ -20,7 +20,7 @@ import { TaonEmailDeliveryAttemptRepository } from './taon-email-delivery-attemp
 export class TaonEmailDeliveryAttemptController extends TaonBaseCrudController<TaonEmailDeliveryAttemptEntity> {
   entityClassResolveFn: () => typeof TaonEmailDeliveryAttemptEntity = () => TaonEmailDeliveryAttemptEntity;
 
-  taonEmailDeliveryAttemptRepository = this.injectCustomRepo(TaonEmailDeliveryAttemptRepository);
+  taonEmailDeliveryAttemptRepository = this.inject(TaonEmailDeliveryAttemptRepository);
 
   //#region methods & getters / hello world
   /**
